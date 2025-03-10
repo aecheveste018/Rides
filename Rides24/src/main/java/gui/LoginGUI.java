@@ -113,7 +113,7 @@ public class LoginGUI extends JFrame {
 		RegisterButton.setBounds(168, 274, 134, 36);
 		contentPane.add(RegisterButton);
 		
-		JLabel lblNewLabel_2 = new JLabel("Bienvenido");
+		JLabel lblNewLabel_2 = new JLabel("Bienvenidoooo");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 17));
 		lblNewLabel_2.setBounds(81, 10, 310, 37);

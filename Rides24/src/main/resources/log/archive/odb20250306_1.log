@@ -1,0 +1,1300 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 14:03:11 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 456@DESKTOP-58BBQEM
+
+[2025-03-06 14:03:12 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 14:03:12 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 14:03:12 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 14:03:12 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 14:03:12 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 14:03:12 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 14:03:12 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 14:03:12 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 14:03:12 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 14:03:12 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 14:03:22 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 14:03:22 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 14:48:34 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 1552@DESKTOP-58BBQEM
+
+[2025-03-06 14:48:35 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 14:48:35 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 14:48:35 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 14:48:35 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 14:48:35 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 14:48:35 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 14:48:35 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 14:48:35 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 14:48:35 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 14:48:35 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 14:48:46 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 14:48:46 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 14:50:15 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 12424@DESKTOP-58BBQEM
+
+[2025-03-06 14:50:15 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 14:50:15 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 14:50:15 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 14:50:15 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 14:50:15 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 14:50:15 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 14:50:15 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 14:50:15 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 14:50:15 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 14:50:15 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 14:50:28 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 14:50:28 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 14:51:15 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 13168@DESKTOP-58BBQEM
+
+[2025-03-06 14:51:15 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 14:51:15 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 14:51:15 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 14:51:15 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 14:51:15 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 14:51:15 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 14:51:15 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 14:51:15 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 14:51:15 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 14:51:15 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 14:51:23 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 14:51:23 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 14:52:30 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 11900@DESKTOP-58BBQEM
+
+[2025-03-06 14:52:30 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 14:52:30 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 14:52:30 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 14:52:30 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 14:52:30 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 14:52:30 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 14:52:30 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 14:52:30 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 14:52:30 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 14:52:30 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 14:52:42 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 14:52:42 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 15:00:51 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 12804@DESKTOP-58BBQEM
+
+[2025-03-06 15:00:52 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 15:00:52 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 15:00:52 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 15:00:52 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 15:00:52 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 15:00:52 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 15:00:52 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 15:00:52 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 15:00:52 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 15:00:52 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 15:01:02 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 15:01:02 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 15:02:24 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 18852@DESKTOP-58BBQEM
+
+[2025-03-06 15:02:24 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 15:02:24 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 15:02:24 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 15:02:24 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 15:02:24 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 15:02:24 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 15:02:24 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 15:02:24 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 15:02:24 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 15:02:24 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 15:02:30 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 15:02:30 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 15:11:32 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 2836@DESKTOP-58BBQEM
+
+[2025-03-06 15:11:32 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 15:11:32 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 15:11:32 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 15:11:32 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 15:11:32 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 15:11:32 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 15:11:32 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 15:11:32 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 15:11:33 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 15:11:33 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 15:11:46 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 15:11:46 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 15:48:06 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 3844@DESKTOP-58BBQEM
+
+[2025-03-06 15:48:07 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 15:48:07 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 15:48:07 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 15:48:07 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 15:48:07 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 15:48:07 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 15:48:07 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 15:48:07 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 15:48:07 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 15:48:07 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 15:48:21 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 15:48:21 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 15:49:11 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 13968@DESKTOP-58BBQEM
+
+[2025-03-06 15:49:11 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 15:49:11 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 15:49:11 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 15:49:11 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 15:49:11 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 15:49:11 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 15:49:11 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 15:49:11 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 15:49:11 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 15:49:11 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 15:49:18 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 15:49:18 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 15:56:34 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 6400@DESKTOP-58BBQEM
+
+[2025-03-06 15:56:34 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 15:56:34 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 15:56:34 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 15:56:34 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 15:56:34 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 15:56:34 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 15:56:34 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 15:56:34 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 15:56:34 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 15:56:34 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 15:56:44 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 1332@DESKTOP-58BBQEM
+
+[2025-03-06 15:56:44 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 15:56:44 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 15:56:44 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 15:56:44 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 15:56:44 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 15:56:44 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 15:56:44 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 15:56:44 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 15:56:44 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 15:56:44 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 15:56:54 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 15:56:54 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 16:00:05 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 1656@DESKTOP-58BBQEM
+
+[2025-03-06 16:00:05 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 16:00:05 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 16:00:05 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 16:00:05 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 16:00:05 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 16:00:05 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 16:00:05 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 16:00:05 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 16:00:05 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 16:00:05 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 16:00:10 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 16:00:10 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 16:09:14 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 11828@DESKTOP-58BBQEM
+
+[2025-03-06 16:09:14 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 16:09:14 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 16:09:14 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 16:09:14 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 16:09:14 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 16:09:14 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 16:09:14 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 16:09:14 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 16:09:14 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 16:09:14 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 16:09:26 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 16:09:26 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 16:10:27 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 21180@DESKTOP-58BBQEM
+
+[2025-03-06 16:10:27 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 16:10:27 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 16:10:27 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 16:10:27 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 16:10:27 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 16:10:27 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 16:10:27 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 16:10:27 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 16:10:27 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 16:10:27 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 16:10:33 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 16:10:33 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 16:13:17 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 16508@DESKTOP-58BBQEM
+
+[2025-03-06 16:13:17 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 16:13:17 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 16:13:17 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 16:13:17 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 16:13:17 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 16:13:17 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 16:13:17 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 16:13:17 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 16:13:17 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 16:13:17 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 16:13:27 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 6256@DESKTOP-58BBQEM
+
+[2025-03-06 16:13:27 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 16:13:27 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 16:13:27 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 16:13:27 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 16:13:27 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 16:13:27 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 16:13:27 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 16:13:27 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 16:13:27 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 16:13:27 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 16:13:35 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 16:13:35 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 16:21:46 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 21108@DESKTOP-58BBQEM
+
+[2025-03-06 16:21:46 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 16:21:46 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 16:21:46 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 16:21:46 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 16:21:46 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 16:21:46 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 16:21:46 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 16:21:46 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 16:21:46 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 16:21:46 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 16:21:52 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 16:21:52 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 16:30:33 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 2712@DESKTOP-58BBQEM
+
+[2025-03-06 16:30:34 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 16:30:34 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 16:30:34 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 16:30:34 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 16:30:34 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 16:30:34 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 16:30:34 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 16:30:34 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 16:30:34 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 16:30:34 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 16:30:39 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 16:30:39 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 16:32:15 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 16192@DESKTOP-58BBQEM
+
+[2025-03-06 16:32:16 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 16:32:16 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 16:32:16 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 16:32:16 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 16:32:16 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 16:32:16 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 16:32:16 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 16:32:16 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 16:32:16 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 16:32:16 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 16:32:35 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 16:32:35 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 16:37:14 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 7440@DESKTOP-58BBQEM
+
+[2025-03-06 16:37:15 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 16:37:15 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 16:37:15 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 16:37:15 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 16:37:15 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 16:37:15 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 16:37:15 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 16:37:15 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 16:37:15 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 16:37:15 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 16:37:23 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 16:37:23 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 17:00:34 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 9848@DESKTOP-58BBQEM
+
+[2025-03-06 17:00:35 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 17:00:35 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 17:00:35 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 17:00:35 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 17:00:35 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 17:00:35 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 17:00:35 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 17:00:35 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 17:00:35 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 17:00:35 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 17:00:47 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 17:00:47 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 17:05:31 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 17108@DESKTOP-58BBQEM
+
+[2025-03-06 17:05:32 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 17:05:32 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 17:05:32 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 17:05:32 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 17:05:32 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 17:05:32 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 17:05:32 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 17:05:32 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 17:05:32 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 17:05:32 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 17:05:41 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 17:05:41 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 17:21:45 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 12160@DESKTOP-58BBQEM
+
+[2025-03-06 17:21:45 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 17:21:45 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 17:21:45 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 17:21:45 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 17:21:45 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 17:21:45 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 17:21:45 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 17:21:45 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 17:21:45 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 17:21:45 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 17:21:56 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 17:21:56 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 17:23:50 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 20420@DESKTOP-58BBQEM
+
+[2025-03-06 17:23:50 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 17:23:50 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 17:23:50 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 17:23:50 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 17:23:50 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 17:23:50 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 17:23:50 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 17:23:50 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 17:23:50 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 17:23:50 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 17:23:59 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 17:23:59 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 17:25:01 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 14124@DESKTOP-58BBQEM
+
+[2025-03-06 17:25:02 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 17:25:02 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 17:25:02 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 17:25:02 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 17:25:02 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 17:25:02 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 17:25:02 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 17:25:02 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 17:25:02 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 17:25:02 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 17:25:10 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 17:25:10 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 17:30:33 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 18164@DESKTOP-58BBQEM
+
+[2025-03-06 17:30:33 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 17:30:33 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 17:30:33 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 17:30:33 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 17:30:33 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 17:30:33 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 17:30:33 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 17:30:33 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 17:30:33 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 17:30:33 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 17:30:52 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 17:30:52 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 17:31:22 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 12608@DESKTOP-58BBQEM
+
+[2025-03-06 17:31:22 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 17:31:22 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 17:31:22 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 17:31:22 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 17:31:22 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 17:31:22 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 17:31:22 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 17:31:22 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 17:31:22 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 17:31:22 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 17:31:40 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 17:31:40 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 17:32:54 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 16836@DESKTOP-58BBQEM
+
+[2025-03-06 17:32:54 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 17:32:54 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 17:32:54 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 17:32:54 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 17:32:54 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 17:32:54 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 17:32:54 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 17:32:54 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 17:32:54 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 17:32:54 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 17:33:05 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 17:33:05 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 17:39:16 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 10224@DESKTOP-58BBQEM
+
+[2025-03-06 17:39:16 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 17:39:16 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 17:39:16 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 17:39:16 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 17:39:16 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 17:39:16 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 17:39:16 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 17:39:16 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 17:39:16 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 17:39:16 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 17:39:24 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 17:39:24 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 17:40:36 #1 store] 
+Database 'C:\Users\pc\Documents\IS1\Rides24\src\main\resources\rides.temp' is opened by 4924@DESKTOP-58BBQEM
+
+[2025-03-06 17:40:36 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 17:40:36 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 17:40:36 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 17:40:36 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 17:40:36 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 17:40:36 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 17:40:36 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 17:40:36 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 17:40:36 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 17:40:36 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 17:40:45 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 17:40:45 #13 type] 
+Type domain.Credentials is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-03-06 19:02:16 #1 store] 
+Database 'C:\UPV\Segundo\2.IS-1\Workspace Eclipse\Rides24\src\main\resources\rides.temp' is opened by 11360@DESKTOP-B08AB6F
+
+[2025-03-06 19:02:16 #2 type.registry] 
+New type domain.Driver
+
+[2025-03-06 19:02:16 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-03-06 19:02:16 #4 type.registry] 
+New type domain.Ride
+
+[2025-03-06 19:02:16 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-03-06 19:02:16 #6 type.registry] 
+New type domain.Passenger
+
+[2025-03-06 19:02:16 #7 type.registry] 
+New type domain.Passenger[]
+
+[2025-03-06 19:02:16 #8 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-03-06 19:02:16 #9 type.registry] 
+New type java.lang.String[]
+
+[2025-03-06 19:02:16 #10 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-03-06 19:02:16 #11 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-03-06 19:02:26 #12 type.registry] 
+New type domain.Credentials
+
+[2025-03-06 19:02:26 #13 type] 
+Type domain.Credentials is not enhanced.
+
