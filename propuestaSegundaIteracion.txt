@@ -1,0 +1,4 @@
+propuestaSegundaIteracion:
+1:Anular reserva
+2:el cliente ve una lista de sus viajes
+3:buscar viajes según las plazas requeridas
