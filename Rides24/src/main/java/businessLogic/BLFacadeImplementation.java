@@ -93,6 +93,7 @@ public class BLFacadeImplementation  implements BLFacade {
 		dbManager.close();
 		return rides;
 	}
+//<<<<<<< HEAD
 	
 	
 	
@@ -247,6 +248,168 @@ public class BLFacadeImplementation  implements BLFacade {
     	return res;
     }
   
+//=======
+	public Ride getRide(String from, String to, Date date, String d) {
+		Ride ride=null;
+		dbManager.open();
+		List<Ride>  rides=dbManager.getRides(from, to, date);
+		dbManager.close();
+		for(Ride r:rides) {
+			if(r.getDriver().getName().equals(d)) {
+				ride=r;
+			}
+		}
+		return ride;
+	}
+	
+	
+	
+	
+
+//	public void addUser(String email, String name, Character tipo) {
+//		dbManager.open();
+//		dbManager.addUser(email, name, tipo);
+//		dbManager.close();
+//	}
+//	
+//	public String findPassword(String email) {
+//		dbManager.open();
+//		String resp = "";
+//		List<Credentials> list = dbManager.getCredentials();
+//		
+//		  Iterator<Credentials> it = list.iterator();
+//		  while(it.hasNext()) {
+//			  Credentials current = it.next();
+//			  System.out.println(current);
+//			  System.out.println("test");
+//			  if(email.equals(current.getmail())) {
+//				  resp = current.getPassword();
+//			  }
+//		  }
+//		
+//		dbManager.close();
+//		
+//		return resp;
+//	}
+//	public void addCredential(String mail, String psw, Character tipe) {
+//		dbManager.open();
+//		dbManager.addCredential(mail, psw, tipe);
+//		dbManager.close();
+//	}
+//	
+//	public boolean exists(String email) {
+//		dbManager.open();
+//		List<Credentials> list = dbManager.getCredentials();
+//		System.out.println("Epa") ;
+//		  Iterator<Credentials> it = list.iterator();
+//		  while(it.hasNext()) {
+//			  Credentials current = it.next();
+//			  if(email.equals(current.getmail())) {
+//				  dbManager.close();
+//				 return true;
+//			  }
+//		  }
+//		
+//		
+//		dbManager.close();
+//		return false;
+//	}
+//	public String getTipo(String email) {
+//		Object tipo=0;
+//		dbManager.open();
+//		List<Credentials> list = dbManager.getCredentials();
+//		System.out.println("Epa") ;
+//		  Iterator<Credentials> it = list.iterator();
+//		  while(it.hasNext()) {
+//			  Credentials current = it.next();
+//			  if(email.equals(current.getmail())) {
+//				  tipo= dbManager.getClass();
+//				  dbManager.close();
+//				 return (String)tipo;
+//			  }
+//		  }
+//		
+//		
+//		dbManager.close();
+//		return (String)tipo;
+//	}
+//	
+//	
+//	
+//	/**
+//	 * {@inheritDoc}
+//	 */
+//	@WebMethod 
+//	public List<Date> getThisMonthDatesWithRides(String from, String to, Date date){
+//		dbManager.open();
+//		List<Date>  dates=dbManager.getThisMonthDatesWithRides(from, to, date);
+//		dbManager.close();
+//		return dates;
+//	}
+//	
+//	
+//	public void close() {
+//		DataAccess dB4oManager=new DataAccess();
+//
+//		dB4oManager.close();
+//
+//	}
+//
+//	/**
+//	 * {@inheritDoc}
+//	 */
+//    @WebMethod	
+//	 public void initializeBD(){
+//    	dbManager.open();
+//		dbManager.initializeDB();
+//		dbManager.close();
+//	}
+//    @Override
+//    public boolean requestReservation(String passengerEmail, Ride ride) {
+//        dbManager.open();
+//        boolean success = dbManager.requestReservation(passengerEmail, ride);
+//        dbManager.close();
+//        return success;
+//    }
+//    @Override
+//    public Driver getDriverByEmail(String email) {
+//        dbManager.open();
+//    	Driver d=dbManager.getDriverByEmail(email);
+//    	dbManager.close();
+//    	return d;
+//    }
+//    
+//    @Override
+//    public Passenger getPassengerByEmail(String email) { 
+//    	dbManager.open();
+//    	Passenger p=dbManager.getPassengerByEmail(email);
+//    	dbManager.close();
+//    	return p;
+//    }
+//    @Override
+//	public List<Ride> getBookingForDriver(Driver driver) {
+//    	dbManager.open();
+//    	List<Ride> list=dbManager.getBookingsForDriver(driver);
+//    	dbManager.close();
+//    	return list;
+//    }
+    @Override
+	public boolean doesCardExist(int nTarjerta) {
+    	dbManager.open();
+    	boolean b=dbManager.doesCardExist(nTarjerta);
+    	dbManager.close();
+    	return b;
+    }
+    
+    @Override
+	public boolean doesCardHaveEnoughMoney(int nTarjeta, double cantidad) {
+    	dbManager.open();
+    	boolean b=dbManager.doesCardHaveEnoughMoney(nTarjeta, cantidad);
+    	dbManager.close();
+    	return b;
+    }
+
+//>>>>>>> branch 'master' of https://github.com/aecheveste018/Rides
 	
 }
 
