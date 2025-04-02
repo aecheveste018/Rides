@@ -28,7 +28,8 @@ public class Passenger implements Serializable {
 	private String[] psw;
 	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.PERSIST)
 	private List<Ride> reservas =new Vector<Ride>();
-
+	private double monedero;
+	private Tarjeta tarjeta;
 
 
 	public Passenger() {
@@ -39,6 +40,7 @@ public class Passenger implements Serializable {
 		this.email = email;
 		this.name = name;
 		this.psw = new String[email.length()];
+		this.monedero=0.0;//por defecto el passenger no tiene dinero en el monedero
 	}
 	
 	
@@ -75,6 +77,16 @@ public class Passenger implements Serializable {
 	public void setReservas(List<Ride> reservas) {
 		this.reservas = reservas;
 	}
-	
-
+	public void setMonedero(double d) {
+		this.monedero=d;
+	}
+	public double getMonedero() {
+		return this.monedero;
+	}
+	public Tarjeta getTarjeta() {
+		return this.tarjeta;
+	}
+	public void setTarjeta(Tarjeta tarjeta) {
+		this.tarjeta=tarjeta;
+	}
 }

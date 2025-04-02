@@ -70,6 +70,7 @@ public class ApplicationLauncher {
 			PassengerGUI.setBussinessLogic(appFacadeInterface);
 			CreateRideGUI.setBussinessLogic(appFacadeInterface);
 			ReservationsGUI.setBussinessLogic(appFacadeInterface);
+			TarjetaGUI.setBussinessLogic(appFacadeInterface);
 			
 		}catch (Exception e) {
 //			a.jLabelSelectOption.setText("Error: "+e.toString());

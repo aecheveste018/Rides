@@ -69,7 +69,7 @@ public class Ride implements Serializable {
 	public Integer getRideNumber() {
 		return rideNumber;
 	}
-
+	
 	
 	/**
 	 * Set the ride number to a ride

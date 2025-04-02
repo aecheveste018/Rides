@@ -4,6 +4,8 @@ import businessLogic.BLFacade;
 import configuration.UtilDate;
 
 import com.toedter.calendar.JCalendar;
+
+import domain.Passenger;
 import domain.Ride;
 import javax.swing.*;
 import java.awt.*;
@@ -53,7 +55,7 @@ public class FindRidesGUI extends JFrame {
 	};
 
 
-	public FindRidesGUI()
+	public FindRidesGUI(Passenger p)
 	{
 
 		this.getContentPane().setLayout(null);
@@ -67,6 +69,8 @@ public class FindRidesGUI extends JFrame {
 		this.getContentPane().add(jLabelEvents);
 
 		jButtonClose.setBounds(new Rectangle(274, 419, 130, 30));
+		BLFacade facade = MainGUI.getBusinessLogic();
+		List<String> origins=facade.getDepartCities();
 
 		jButtonClose.addActionListener(new ActionListener()
 		{
@@ -75,8 +79,7 @@ public class FindRidesGUI extends JFrame {
 				jButton2_actionPerformed(e);
 			}
 		});
-		BLFacade facade = MainGUI.getBusinessLogic();
-		List<String> origins=facade.getDepartCities();
+		
 		
 		for(String location:origins) originLocations.addElement(location);
 		
@@ -185,7 +188,8 @@ public class FindRidesGUI extends JFrame {
 							row.add(ride.getnPlaces());
 							row.add(ride.getPrice());
 							row.add(ride); // ev object added in order to obtain it with tableModelEvents.getValueAt(i,3)
-							tableModelRides.addRow(row);		
+							tableModelRides.addRow(row);	
+							
 						}
 						datesWithRidesCurrentMonth=facade.getThisMonthDatesWithRides((String)jComboBoxOrigin.getSelectedItem(),(String)jComboBoxDestination.getSelectedItem(),jCalendar1.getDate());
 						paintDaysWithEvents(jCalendar1,datesWithRidesCurrentMonth,Color.CYAN);
@@ -205,7 +209,7 @@ public class FindRidesGUI extends JFrame {
 			
 		});
 
-		this.getContentPane().add(jCalendar1, null);
+		
 
 		scrollPaneEvents.setBounds(new Rectangle(172, 257, 346, 150));
 
@@ -220,13 +224,19 @@ public class FindRidesGUI extends JFrame {
 		tableRides.getColumnModel().getColumn(0).setPreferredWidth(170);
 		tableRides.getColumnModel().getColumn(1).setPreferredWidth(30);
 		tableRides.getColumnModel().getColumn(1).setPreferredWidth(30);
-
+		int i=tableRides.getSelectedColumn();
+		System.out.println("kzbfobaquiaquiaqui");
+		System.out.println(tableRides.getColumnModel().getColumn(i).getClass());
 		tableRides.getColumnModel().removeColumn(tableRides.getColumnModel().getColumn(3)); // not shown in JTable
-
+////////////////////////////////////////
 		this.getContentPane().add(scrollPaneEvents, null);
 		datesWithRidesCurrentMonth=facade.getThisMonthDatesWithRides((String)jComboBoxOrigin.getSelectedItem(),(String)jComboBoxDestination.getSelectedItem(),jCalendar1.getDate());
 		paintDaysWithEvents(jCalendar1,datesWithRidesCurrentMonth,Color.CYAN);
 
+		
+		this.getContentPane().add(jCalendar1, null);
+		
+		
 	}
 	public static void paintDaysWithEvents(JCalendar jCalendar,List<Date> datesWithEventsCurrentMonth, Color color) {
 		//		// For each day with events in current month, the background color for that day is changed to cyan.

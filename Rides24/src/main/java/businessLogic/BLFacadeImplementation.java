@@ -93,7 +93,18 @@ public class BLFacadeImplementation  implements BLFacade {
 		dbManager.close();
 		return rides;
 	}
-	
+	public Ride getRide(String from, String to, Date date, String d) {
+		Ride ride=null;
+		dbManager.open();
+		List<Ride>  rides=dbManager.getRides(from, to, date);
+		dbManager.close();
+		for(Ride r:rides) {
+			if(r.getDriver().getName().equals(d)) {
+				ride=r;
+			}
+		}
+		return ride;
+	}
 	
 	
 	
@@ -225,6 +236,21 @@ public class BLFacadeImplementation  implements BLFacade {
     	List<Ride> list=dbManager.getBookingsForDriver(driver);
     	dbManager.close();
     	return list;
+    }
+    @Override
+	public boolean doesCardExist(int nTarjerta) {
+    	dbManager.open();
+    	boolean b=dbManager.doesCardExist(nTarjerta);
+    	dbManager.close();
+    	return b;
+    }
+    
+    @Override
+	public boolean doesCardHaveEnoughMoney(int nTarjeta, double cantidad) {
+    	dbManager.open();
+    	boolean b=dbManager.doesCardHaveEnoughMoney(nTarjeta, cantidad);
+    	dbManager.close();
+    	return b;
     }
 
 	

@@ -13,6 +13,7 @@ import java.util.ResourceBundle;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.NoResultException;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 
@@ -22,6 +23,7 @@ import domain.Credentials;
 import domain.Driver;
 import domain.Passenger;
 import domain.Ride;
+import domain.Tarjeta;
 import exceptions.RideAlreadyExistException;
 import exceptions.RideMustBeLaterThanTodayException;
 
@@ -105,7 +107,15 @@ public class DataAccess {
 			db.persist(driver1);
 			db.persist(driver2);
 			db.persist(driver3);
+			
+			//cretae cards
+			Tarjeta t1=new Tarjeta(1,1,String.valueOf(1),String.valueOf(1),200);
+			Tarjeta t2=new Tarjeta(2,1,String.valueOf(1),String.valueOf(1),0);
+			Tarjeta t3=new Tarjeta(3,1,String.valueOf(1),String.valueOf(1),20);
 
+			db.persist(t1);
+			db.persist(t2);
+			db.persist(t3);
 			db.getTransaction().commit();
 			System.out.println("Db initialized");
 		} catch (Exception e) {
@@ -374,6 +384,48 @@ public class DataAccess {
 
 	    return bookings;
 	}
-	
+	public boolean doesCardExist(int nTarjeta) {
+	    EntityManager em = emf.createEntityManager();
+	    try {
+	    	
+	        TypedQuery<Tarjeta> query = em.createQuery(
+	        		"SELECT t FROM Tarjeta t WHERE t.nTarjeta = :nTarjeta", Tarjeta.class);
+	    	query.setParameter("nTarjeta", nTarjeta);
+	    	Tarjeta t=query.getSingleResult();
+	    	System.out.println("Tarjeta encontrada: " + t.getnTarjeta());
+	        
+
+	        return true;
+	    } catch (NoResultException e) {
+	        System.out.println(" No se encontró ninguna tarjeta con el número: " + nTarjeta);
+	        return false;
+	    } finally {
+	        em.close();
+	    }
+	}
+	public boolean doesCardHaveEnoughMoney(int nTarjeta, double cantidad) {
+	    EntityManager em = emf.createEntityManager();
+	    try {
+	    	
+	        TypedQuery<Tarjeta> query = em.createQuery(
+	        		"SELECT t FROM Tarjeta t WHERE t.nTarjeta = :nTarjeta", Tarjeta.class);
+	    	query.setParameter("nTarjeta", nTarjeta);
+	    	Tarjeta t=query.getSingleResult();
+	    	System.out.println("Tarjeta encontrada: " + t.getnTarjeta());
+	        if(t.getCantidad()>=cantidad) {
+	        	t.setCantidad(t.getCantidad()-cantidad);
+	        	return true;
+	        }else {
+	        	return false;
+	        }
+
+	        
+	    } catch (NoResultException e) {
+	        System.out.println(" No se encontró ninguna tarjeta con el número: " + nTarjeta);
+	        return false;
+	    } finally {
+	        em.close();
+	    }
+	}
 
 }

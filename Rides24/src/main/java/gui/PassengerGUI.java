@@ -1,21 +1,13 @@
 package gui;
 
 import java.awt.EventQueue;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
 import java.util.List;
 import java.util.ResourceBundle;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
 import domain.*;
-import javax.swing.JLabel;
-import javax.swing.DefaultComboBoxModel;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
+
 import com.toedter.calendar.JCalendar;
 import domain.Ride;
 import javax.swing.*;
@@ -33,6 +25,7 @@ import configuration.UtilDate;
 public class PassengerGUI extends JFrame {
 	
 	 private static final long serialVersionUID = 1L;
+		private Ride ride=null;
 
 	    private JPanel contentPane;
 	    private Passenger passenger;
@@ -123,8 +116,21 @@ public class PassengerGUI extends JFrame {
                         Ride selectedRide = (Ride) tableModelRides.getValueAt(selectedRow, 3); // Obtener el objeto Ride de la fila seleccionada
                         String passengerEmail = passenger.getEmail(); // Obtener el correo electrónico del pasajero actual 
                         boolean success = BLF.requestReservation(passengerEmail, selectedRide); // Realizar la reserva
+                      
                         if (success) {
-                            JOptionPane.showMessageDialog(contentPane, "Reserva realizada con éxito.");
+                        	if(selectedRide.getPrice()<=passenger.getMonedero()) {
+                        		p.setMonedero(p.getMonedero()-selectedRide.getPrice());
+                        		dispose();
+                        		JOptionPane.showMessageDialog(contentPane, "Reserva realizada con éxito.");
+                                dispose();
+                        	}else {
+                        		JOptionPane.showMessageDialog(contentPane, "Recargue su monedero.");
+                                RecargarMonederoGUI r=new RecargarMonederoGUI(passenger);
+                        		r.setVisible(true);
+                                dispose();
+                        	}
+                            
+                            
                         } else {
                             JOptionPane.showMessageDialog(contentPane, "No se pudo realizar la reserva.");
                         }
@@ -219,6 +225,27 @@ public class PassengerGUI extends JFrame {
         datesWithRidesCurrentMonth = BLF.getThisMonthDatesWithRides((String) departCity.getSelectedItem(),
                 (String) arriveCity.getSelectedItem(), jCalendar1.getDate());
         paintDaysWithEvents(jCalendar1, datesWithRidesCurrentMonth, Color.CYAN);
+    /*    
+     // Agregar un MouseListener para capturar clics en la tabla
+     		tableRides.addMouseListener(new MouseAdapter() {
+     		    @Override
+     		    public void mouseClicked(MouseEvent e) {
+     		        int filaSeleccionada = tableRides.getSelectedRow();
+     		        if (filaSeleccionada != -1) { // Si hay una fila válida seleccionada
+     		            Ride rideSeleccionado = (Ride) tableModelRides.getValueAt(filaSeleccionada, 3); // Columna oculta
+     		            JOptionPane.showMessageDialog(null, 
+     		                "Conductor: " + rideSeleccionado.getDriver().getName() + "\n" +
+     		                "Plazas disponibles: " + rideSeleccionado.getnPlaces() + "\n" +
+     		                "Precio: " + rideSeleccionado.getPrice(),
+     		                "Ride Seleccionado",
+     		                JOptionPane.INFORMATION_MESSAGE);
+     		            
+     		            // Guardar el ride seleccionado en la variable de clase
+     		            ride = rideSeleccionado; 
+     		        }
+     		    }
+     		});
+        */
     }
 
     public static void paintDaysWithEvents(JCalendar jCalendar, List<Date> datesWithEventsCurrentMonth, Color color) {

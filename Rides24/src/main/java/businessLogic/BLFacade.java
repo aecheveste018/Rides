@@ -85,6 +85,10 @@ public interface BLFacade  {
 
 	List<Ride> getBookingForDriver(Driver driver);
 
+	boolean doesCardExist(int nTarjerta);
+
+	boolean doesCardHaveEnoughMoney(int nTarjeta, double cantidad);
+
 
 	
 }

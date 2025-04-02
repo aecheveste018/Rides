@@ -30,7 +30,7 @@ public class Main2GUI extends JFrame {
 
 	private JPanel jContentPane = null;
 	private JButton jButtonCreateQuery = null;
-	private JButton jButtonQueryQueries = null;
+	private JButton jButtonConsultarSaldo = null;
 
     private static BLFacade appFacadeInterface;
 	
@@ -42,9 +42,7 @@ public class Main2GUI extends JFrame {
 		appFacadeInterface=afi;
 	}
 	protected JLabel jLabelSelectOption;
-	private JRadioButton rdbtnNewRadioButton;
-	private JRadioButton rdbtnNewRadioButton_1;
-	private JRadioButton rdbtnNewRadioButton_2;
+
 	private JPanel panel;
 	private final ButtonGroup buttonGroup = new ButtonGroup();
 	
@@ -90,7 +88,6 @@ public class Main2GUI extends JFrame {
 				paintAgain();
 			}
 		});*/
-		buttonGroup.add(rdbtnNewRadioButton_2);
 	
 		panel = new JPanel();
 		/*
@@ -106,14 +103,26 @@ public class Main2GUI extends JFrame {
 				a.setVisible(true);
 			}
 		});
+		/// TO DO
+		jButtonConsultarSaldo = new JButton();
+		jButtonConsultarSaldo.setText("Consultar saldo");
+		jButtonConsultarSaldo.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(java.awt.event.ActionEvent e) {
+				JFrame a = new ConsultarSaldoGUI(passenger);
+				a.setVisible(true);
+			}
+		});
 		
 		
 		
 		jContentPane = new JPanel();
 		jContentPane.setLayout(new GridLayout(4, 1, 0, 0));
 		jContentPane.add(jLabelSelectOption);
+		jContentPane.add(jButtonConsultarSaldo);
 		jContentPane.add(jButtonCreateQuery);
 		jContentPane.add(panel);
+		
+		
 		
 		
 		setContentPane(jContentPane);
@@ -126,13 +135,6 @@ public class Main2GUI extends JFrame {
 			}
 		});
 	}
-	/*
-	private void paintAgain() {
-		jLabelSelectOption.setText(ResourceBundle.getBundle("Etiquetas").getString("MainGUI.SelectOption"));
-		jButtonQueryQueries.setText(ResourceBundle.getBundle("Etiquetas").getString("MainGUI.QueryRides"));
-		jButtonCreateQuery.setText(ResourceBundle.getBundle("Etiquetas").getString("MainGUI.CreateRide"));
-		this.setTitle(ResourceBundle.getBundle("Etiquetas").getString("MainGUI.MainTitle")+ " - driver :"+passenger.getName());
-	}
-	*/
+	
 } // @jve:decl-index=0:visual-constraint="0,0"
 
