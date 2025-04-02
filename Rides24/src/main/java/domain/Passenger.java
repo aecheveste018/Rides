@@ -75,6 +75,11 @@ public class Passenger implements Serializable {
 	public void setReservas(List<Ride> reservas) {
 		this.reservas = reservas;
 	}
-	
+	public void addReserva(Ride rd) {
+		reservas.add(rd);
+	}
+	public void retirarReserva(Ride rd) {
+		reservas.remove(rd);
+	}
 
 }

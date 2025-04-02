@@ -29,6 +29,8 @@ public class Ride implements Serializable {
 	private Driver driver; 
 	//foto
 	private Passenger[] booked;
+	// en "Paralelo" a booked, para saber cuales estan aceptados y cuales no
+	private boolean[] bookStatus;
 	
 	public Ride(){
 		super();
@@ -46,6 +48,10 @@ public class Ride implements Serializable {
 		//foto
 		
 		this.booked= new Passenger[nPlaces];
+		this.bookStatus = new boolean[nPlaces];
+		for(int i = 0; i <= nPlaces; i++) {
+			this.bookStatus[i] = false;
+		}
 	}
 
 	
@@ -59,6 +65,10 @@ public class Ride implements Serializable {
 		this.price=price;
 		this.driver = driver;
 		this.booked= new Passenger[nPlaces];
+		this.bookStatus = new boolean[nPlaces];
+		for(int i = 0; i < nPlaces; i++) {
+			this.bookStatus[i] = false;
+		}
 	}
 	
 	/**
@@ -186,7 +196,12 @@ public class Ride implements Serializable {
 		this.price = price;
 	}
 
-
+	public Passenger[] getBooked() {
+		return booked;
+	}
+	public boolean[] getBookStatus() {
+		return bookStatus;
+	}
 
 	public String toString(){
 		return rideNumber+";"+";"+from+";"+to+";"+date;  
@@ -203,8 +218,25 @@ public class Ride implements Serializable {
 		}
 		return added;
 	}
-	
-
+	public void setStatus(int i, boolean stat) {
+		bookStatus[i] = stat;
+		
+	}
+	public void retireBook(Passenger p) {
+		boolean exit = false;
+		int i = 0;
+		while(!exit) {
+			if(booked[i].equals(p)) {
+				exit = true;
+				booked[i]= null;
+				bookStatus[i] = false;
+			}
+			if(i == booked.length) {
+				exit = true;
+			}
+				
+		}
+	}
 
 
 	

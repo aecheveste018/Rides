@@ -1,4 +1,5 @@
 package businessLogic;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
@@ -113,7 +114,7 @@ public class BLFacadeImplementation  implements BLFacade {
 		  while(it.hasNext()) {
 			  Credentials current = it.next();
 			  System.out.println(current);
-			  System.out.println("test");
+		//	  System.out.println("test");
 			  if(email.equals(current.getmail())) {
 				  resp = current.getPassword();
 			  }
@@ -132,7 +133,7 @@ public class BLFacadeImplementation  implements BLFacade {
 	public boolean exists(String email) {
 		dbManager.open();
 		List<Credentials> list = dbManager.getCredentials();
-		System.out.println("Epa") ;
+		//System.out.println("Epa") ;
 		  Iterator<Credentials> it = list.iterator();
 		  while(it.hasNext()) {
 			  Credentials current = it.next();
@@ -150,7 +151,7 @@ public class BLFacadeImplementation  implements BLFacade {
 		Object tipo=0;
 		dbManager.open();
 		List<Credentials> list = dbManager.getCredentials();
-		System.out.println("Epa") ;
+		//System.out.println("Epa") ;
 		  Iterator<Credentials> it = list.iterator();
 		  while(it.hasNext()) {
 			  Credentials current = it.next();
@@ -203,6 +204,11 @@ public class BLFacadeImplementation  implements BLFacade {
         dbManager.close();
         return success;
     }
+    public void aproveRide(Ride ride, Passenger p) {
+    	dbManager.open();
+    	dbManager.aproveRide(ride, p);
+    	dbManager.close();
+    }
     @Override
     public Driver getDriverByEmail(String email) {
         dbManager.open();
@@ -218,7 +224,29 @@ public class BLFacadeImplementation  implements BLFacade {
     	dbManager.close();
     	return p;
     }
-    
+    public List<Ride> getClientRides(Passenger user){
+    	dbManager.open();
+//    	List<Ride> list = dbManager.getClientRides(user);
+//    	List<Ride> res = new ArrayList();
+//    	//Filtrar los resuktados 
+//    	Iterator<Ride> it = list.iterator();
+//    	while(it.hasNext()) {
+//    		Ride current = it.next();
+//    		Passenger[] currentList = current.getBooked();
+//    		//revisar en casa
+//    		for(int i=1; i <= current.getRideNumber(); i++) {
+//    			if(currentList[i].equals(user)) {
+//    				res.add(current);
+//    			}
+//    		}
+//    	}
+
+    	List<Ride> res = dbManager.getPassengerByEmail(user.getEmail()).getReservas();
+    	
+    	dbManager.close();
+    	return res;
+    }
+  
 	
 }
 

@@ -60,6 +60,10 @@ public class Driver implements Serializable {
 		return email+";"+name+rides;
 	}
 	
+	public List<Ride> getRides(){
+		return rides;
+	}
+	
 	/**
 	 * This method creates a bet with a question, minimum bet ammount and percentual profit
 	 * 

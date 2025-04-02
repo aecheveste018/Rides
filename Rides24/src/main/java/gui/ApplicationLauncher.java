@@ -29,7 +29,8 @@ public class ApplicationLauncher {
 		System.out.println("Locale: "+Locale.getDefault());
 		
 	    Driver driver=new Driver("driver3@gmail.com","Test Driver");
-
+	 //   VisualizeRidesGUI test = new VisualizeRidesGUI();
+	//    test.setVisible(true);
 		LoginGUI b = new LoginGUI();
 		//MainGUI a=new MainGUI(driver);
 		b.setVisible(true);

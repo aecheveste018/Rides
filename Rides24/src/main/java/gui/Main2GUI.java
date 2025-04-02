@@ -117,23 +117,50 @@ public class Main2GUI extends JFrame {
 			}
 		});
 		
+		
+		JButton jButtonSeeRides = new JButton();
+		//jButtonSeeRides.setText(ResourceBundle.getBundle("Etiquetas").getString("Main2GUI.jButtonSeeRides.text")); //$NON-NLS-1$ //$NON-NLS-2$
+		jButtonSeeRides.setText("See My Rides");
+		//panel.add(jButtonSeeRides);
+		jButtonSeeRides.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//dispose();
+				//setVisible(false);
+				 VisualizeRidesGUI test = new VisualizeRidesGUI(d);
+				 test.setVisible(true);
+				 
+				 //if(test)
+				 //setVisible(true);
+				 
+			}
+		});
+		//jButtonSeeRides.setText(ResourceBundle.getBundle("Etiquetas").getString("Main2GUI.jButtonSeeRides.text")); //$NON-NLS-1$ //$NON-NLS-2$
+	
+		
+		
+
 		jContentPane = new JPanel();
-		jContentPane.setLayout(new GridLayout(4, 1, 0, 0));
+		jContentPane.setLayout(new GridLayout(5, 1, 0, 0));
 		jContentPane.add(jLabelSelectOption);
 		jContentPane.add(jButtonCreateQuery);
 		jContentPane.add(jButtonQueryQueries);
+		jContentPane.add(jButtonSeeRides);
+
 		jContentPane.add(panel);
-		
-		
 		setContentPane(jContentPane);
 		setTitle(ResourceBundle.getBundle("Etiquetas").getString("MainGUI.MainTitle") + " - driver :"+passenger.getName());
 		
-		addWindowListener(new WindowAdapter() {
-			@Override
-			public void windowClosing(WindowEvent e) {
-				System.exit(1);
-			}
-		});
+		
+//		addWindowListener(new WindowAdapter() {
+//			@Override
+//			public void windowClosing(WindowEvent e) {
+//				//System.exit(1);
+//				if(!test.isVisible()) {
+//					 test.dispose();
+//					 setVisible(true);
+//				 }
+//			}
+//		});
 	}
 	/*
 	private void paintAgain() {

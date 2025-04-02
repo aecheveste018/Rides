@@ -210,6 +210,7 @@ public class DataAccess {
 			Ride ride = driver.addRide(from, to, date, nPlaces, price);
 			// next instruction can be obviated
 			db.persist(driver);
+			insertRide(ride);
 			db.getTransaction().commit();
 
 			return ride;
@@ -326,15 +327,19 @@ public class DataAccess {
 		db.close();
 		System.out.println("DataAcess closed");
 	}
-
+//mod (el rideFromDB)
 	public boolean requestReservation(String passengerEmail, Ride ride) {
 		db.getTransaction().begin();
 		Passenger passenger = db.find(Passenger.class, passengerEmail); // Obtener el objeto Passenger de la base de
-																		// datos
+		Ride rideFromDB = db.find(Ride.class, ride.getRideNumber());														// datos
 		if (passenger != null) { // Verificar si se encontró el pasajero
-			if (ride.getnPlaces() > 0) { // Verificar si hay plazas disponibles en el viaje
-				if (ride.addBook(passenger)) { // Intentar realizar la reserva para el pasajero
-					ride.setBetMinimum(ride.getnPlaces() - 1); // Actualizar el número de plazas disponibles en el viaje
+			if (rideFromDB.getnPlaces() > 0) { // Verificar si hay plazas disponibles en el viaje
+				if (rideFromDB.addBook(passenger)) { // Intentar realizar la reserva para el pasajero
+					rideFromDB.setBetMinimum(rideFromDB.getnPlaces() - 1); // Actualizar el número de plazas disponibles en el viaje
+					passenger.addReserva(rideFromDB); 
+						
+					//db.merge(passenger);
+					db.merge(rideFromDB);
 					db.getTransaction().commit();
 					return true; // Reserva exitosa
 				} else {
@@ -350,6 +355,57 @@ public class DataAccess {
 			return false; // Si no se encuentra el pasajero, no se puede realizar la reserva
 		}
 	}
-	
-
+//	public List<Ride> getClientRides(Passenger user){
+//
+//
+//		List<Ride> res = new ArrayList<>();
+//		TypedQuery<Ride> query = db.createQuery("SELECT r FROM Ride r ", Ride.class);
+//		
+//		List<Ride> rides = query.getResultList();
+//		for (Ride ride : rides) {
+//			res.add(ride);
+//		}
+//		return res;
+//	}
+	public void deleteBooked() {
+		db.getTransaction().begin();
+		//TODO
+		
+		
+		
+		db.getTransaction().commit();
+	}
+	public void insertRide(Ride ride) {
+		db.getTransaction().begin();
+		db.persist(ride);
+		db.getTransaction().commit();
+	}
+	public void aproveRide(Ride ride, Passenger p) {
+		//Obtenemos el ride de la BD para no tener problemas con el merge
+		db.getTransaction().begin();
+		Ride rideFromDB = db.find(Ride.class, ride.getRideNumber());
+		Passenger[] pArray = rideFromDB.getBooked(); 
+		int i=0;
+		boolean exit = false;
+		while(i < rideFromDB.getnPlaces() || !exit) {
+			if(pArray[i].getEmail().equals(p.getEmail())) {
+				exit = true;
+				rideFromDB.setStatus(i, true);
+			}
+			
+		}
+		db.merge(rideFromDB);
+		db.getTransaction().commit();
+	}
+	public void anularReserva(Passenger p, Ride ride) {
+		db.getTransaction().begin();
+		Ride rideFromDB = db.find(Ride.class, ride.getRideNumber());
+		Passenger passenger = db.find(Passenger.class, p.getEmail());
+		passenger.retirarReserva(rideFromDB);
+		rideFromDB.retireBook(passenger);
+		db.merge(rideFromDB);
+		db.merge(passenger);
+		
+		db.getTransaction().commit();
+	}
 }
