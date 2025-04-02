@@ -29,7 +29,7 @@ public class Ride implements Serializable {
 	private Driver driver; 
 	//foto
 	private Passenger[] booked;
-<<<<<<< HEAD
+//<<<<<<< HEAD
 	// en "Paralelo" a booked, para saber cuales estan aceptados y cuales no
 	private boolean[] bookStatus;
 	

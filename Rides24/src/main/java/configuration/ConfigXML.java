@@ -342,4 +342,4 @@ public class ConfigXML {
 	}
 
 }
->>>>>>> branch 'master' of https://github.com/aecheveste018/Rides
+//>>>>>>> branch 'master' of https://github.com/aecheveste018/Rides

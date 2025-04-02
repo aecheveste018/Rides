@@ -387,12 +387,12 @@ public class BLFacadeImplementation  implements BLFacade {
 //    	return p;
 //    }
 //    @Override
-//	public List<Ride> getBookingForDriver(Driver driver) {
-//    	dbManager.open();
-//    	List<Ride> list=dbManager.getBookingsForDriver(driver);
-//    	dbManager.close();
-//    	return list;
-//    }
+	public List<Ride> getBookingForDriver(Driver driver) {
+    	dbManager.open();
+    	List<Ride> list=dbManager.getBookingsForDriver(driver);
+    	dbManager.close();
+    	return list;
+    }
     @Override
 	public boolean doesCardExist(int nTarjerta) {
     	dbManager.open();
@@ -409,6 +409,7 @@ public class BLFacadeImplementation  implements BLFacade {
     	return b;
     }
 
+	
 //>>>>>>> branch 'master' of https://github.com/aecheveste018/Rides
 	
 }

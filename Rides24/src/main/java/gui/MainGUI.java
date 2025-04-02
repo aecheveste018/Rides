@@ -108,11 +108,11 @@ public class MainGUI extends JFrame {
 		jButtonQueryQueries.setText(ResourceBundle.getBundle("Etiquetas").getString("MainGUI.QueryRides"));
 		jButtonQueryQueries.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent e) {
-<<<<<<< HEAD
-				JFrame a = new FindRidesGUI();
-=======
+//<<<<<<< HEAD
+//				JFrame a = new FindRidesGUI();
+//=======
 				JFrame a = new ReservationsGUI(driver);
->>>>>>> branch 'master' of https://github.com/aecheveste018/Rides
+//>>>>>>> branch 'master' of https://github.com/aecheveste018/Rides
 
 				a.setVisible(true);
 			}

@@ -29,50 +29,50 @@ public class ApplicationLauncher {
 		System.out.println("Locale: "+Locale.getDefault());
 		
 	    Driver driver=new Driver("driver3@gmail.com","Test Driver");
-<<<<<<< HEAD
-	 //   VisualizeRidesGUI test = new VisualizeRidesGUI();
-	//    test.setVisible(true);
-		LoginGUI b = new LoginGUI();
-		//MainGUI a=new MainGUI(driver);
-		b.setVisible(true);
-
-
-		try {
-			
-			BLFacade appFacadeInterface;
-			UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
-			
-			if (c.isBusinessLogicLocal()) {
-			
-				DataAccess da= new DataAccess();
-				appFacadeInterface=new BLFacadeImplementation(da);
-
-				
-			}
-			
-			else { //If remote
-				
-				 String serviceName= "http://"+c.getBusinessLogicNode() +":"+ c.getBusinessLogicPort()+"/ws/"+c.getBusinessLogicName()+"?wsdl";
-				 
-				URL url = new URL(serviceName);
-
-		 
-		        //1st argument refers to wsdl document above
-				//2nd argument is service name, refer to wsdl document above
-		        QName qname = new QName("http://businessLogic/", "BLFacadeImplementationService");
-		 
-		        Service service = Service.create(url, qname);
-
-		         appFacadeInterface = service.getPort(BLFacade.class);
-			} 
-			
-			//MainGUI.setBussinessLogic(appFacadeInterface);
-			RegisterGUI.setBussinessLogic(appFacadeInterface);
-			LoginGUI.setBussinessLogic(appFacadeInterface);
-			PassengerGUI.setBussinessLogic(appFacadeInterface);
-			CreateRideGUI.setBussinessLogic(appFacadeInterface);
-			VisualizeRequestsGUI.setBussinessLogic(appFacadeInterface);
-=======
+//<<<<<<< HEAD
+//	 //   VisualizeRidesGUI test = new VisualizeRidesGUI();
+//	//    test.setVisible(true);
+//		LoginGUI b = new LoginGUI();
+//		//MainGUI a=new MainGUI(driver);
+//		b.setVisible(true);
+//
+//
+//		try {
+//			
+//			BLFacade appFacadeInterface;
+//			UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
+//			
+//			if (c.isBusinessLogicLocal()) {
+//			
+//				DataAccess da= new DataAccess();
+//				appFacadeInterface=new BLFacadeImplementation(da);
+//
+//				
+//			}
+//			
+//			else { //If remote
+//				
+//				 String serviceName= "http://"+c.getBusinessLogicNode() +":"+ c.getBusinessLogicPort()+"/ws/"+c.getBusinessLogicName()+"?wsdl";
+//				 
+//				URL url = new URL(serviceName);
+//
+//		 
+//		        //1st argument refers to wsdl document above
+//				//2nd argument is service name, refer to wsdl document above
+//		        QName qname = new QName("http://businessLogic/", "BLFacadeImplementationService");
+//		 
+//		        Service service = Service.create(url, qname);
+//
+//		         appFacadeInterface = service.getPort(BLFacade.class);
+//			} 
+//			
+//			//MainGUI.setBussinessLogic(appFacadeInterface);
+//			RegisterGUI.setBussinessLogic(appFacadeInterface);
+//			LoginGUI.setBussinessLogic(appFacadeInterface);
+//			PassengerGUI.setBussinessLogic(appFacadeInterface);
+//			CreateRideGUI.setBussinessLogic(appFacadeInterface);
+//			VisualizeRequestsGUI.setBussinessLogic(appFacadeInterface);
+//=======
 
 		LoginGUI b = new LoginGUI();
 		//MainGUI a=new MainGUI(driver);
@@ -115,7 +115,7 @@ public class ApplicationLauncher {
 			CreateRideGUI.setBussinessLogic(appFacadeInterface);
 			ReservationsGUI.setBussinessLogic(appFacadeInterface);
 			TarjetaGUI.setBussinessLogic(appFacadeInterface);
->>>>>>> branch 'master' of https://github.com/aecheveste018/Rides
+//>>>>>>> branch 'master' of https://github.com/aecheveste018/Rides
 			
 		}catch (Exception e) {
 //			a.jLabelSelectOption.setText("Error: "+e.toString());
