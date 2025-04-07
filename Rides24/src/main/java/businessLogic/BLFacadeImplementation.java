@@ -409,7 +409,11 @@ public class BLFacadeImplementation  implements BLFacade {
     	return b;
     }
 
-	
+	public void anularReserva(Passenger p, Ride ride) {
+		dbManager.open();
+		dbManager.anularReserva(p, ride);
+		dbManager.close();
+	}
 //>>>>>>> branch 'master' of https://github.com/aecheveste018/Rides
 	
 }

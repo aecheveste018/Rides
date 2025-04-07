@@ -2,6 +2,7 @@ package gui;
 
 import java.awt.EventQueue;
 
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.DefaultListModel;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -18,6 +19,7 @@ import javax.swing.JComboBox;
 import javax.swing.JScrollPane;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
@@ -25,6 +27,7 @@ public class VisualizeRidesGUI extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
+	private DefaultComboBoxModel<Ride> ridesModel = new DefaultComboBoxModel<Ride>();
 	private Passenger user;
 
 	/**
@@ -77,15 +80,24 @@ public class VisualizeRidesGUI extends JFrame {
 		JList RideList = new JList();
 		scrollPane.setViewportView(RideList);
 //MIRAR
-		DefaultListModel<String> listModel = new DefaultListModel<>();//(DefaultListModel<Ride>) pUser.getReservas();
-       List<Ride> lrides = pUser.getReservas();
-       Iterator<Ride> it = lrides.iterator();
-       while(it.hasNext()) {
-    	   Ride current = it.next();
-    	   listModel.addElement(current.toString());
+	//	DefaultListModel<String> listModel = new DefaultListModel<>();//(DefaultListModel<Ride>) pUser.getReservas();
+ 
+    //   Iterator<Ride> it = lrides.iterator();
        
-       
+       ridesModel.removeAllElements();
+       Collection<Ride> rList = pUser.getReservas();
+       for(Ride r : rList) {
+    	   ridesModel.addElement(r);
        }
-       RideList.setModel(listModel);
+//       while(it.hasNext()) {
+//    	   Ride current = it.next();
+//    	   //obtener si esta aceptado o no
+//    	   
+//    	   listModel.addElement(current.toString() );
+//       
+//       
+//       }
+       RideList.setModel(ridesModel);
+       
 	}
 }

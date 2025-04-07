@@ -32,6 +32,7 @@ public class Main2GUI extends JFrame {
 	private JPanel jContentPane = null;
 	private JButton jButtonCreateQuery = null;
 	private JButton jButtonQueryQueries = null;
+	private JButton jButtonAnular;
 
     private static BLFacade appFacadeInterface;
 	
@@ -42,6 +43,7 @@ public class Main2GUI extends JFrame {
 	public static void setBussinessLogic (BLFacade afi){
 		appFacadeInterface=afi;
 	}
+	private JButton jButtonConsultarSaldo = null;
 	protected JLabel jLabelSelectOption;
 	private JRadioButton rdbtnNewRadioButton;
 	private JRadioButton rdbtnNewRadioButton_1;
@@ -108,12 +110,13 @@ public class Main2GUI extends JFrame {
 			}
 		});
 		
-		jButtonQueryQueries = new JButton();
-		jButtonQueryQueries.setText("See My Requests");
-		jButtonQueryQueries.addActionListener(new java.awt.event.ActionListener() {
+		jButtonAnular = new JButton();
+		jButtonAnular.setText("Anular"); //$NON-NLS-1$ //$NON-NLS-2$
+		jButtonAnular.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent e) {
-				JFrame a = new VisualizeRequestsGUI(passenger);
-
+				//JFrame a = new VisualizeRequestsGUI(passenger);
+				AnularGUI a = new AnularGUI(passenger);
+				a.setBussinessLogic(appFacadeInterface);
 				a.setVisible(true);
 			}
 		});
@@ -136,15 +139,23 @@ public class Main2GUI extends JFrame {
 			}
 		});
 		//jButtonSeeRides.setText(ResourceBundle.getBundle("Etiquetas").getString("Main2GUI.jButtonSeeRides.text")); //$NON-NLS-1$ //$NON-NLS-2$
-	
+		jButtonConsultarSaldo = new JButton();
+		jButtonConsultarSaldo.setText("Saldo");
+		jButtonConsultarSaldo.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(java.awt.event.ActionEvent e) {
+				JFrame a = new ConsultarSaldoGUI(passenger);
+				a.setVisible(true);
+			}
+		});
 		
 		
 
 		jContentPane = new JPanel();
-		jContentPane.setLayout(new GridLayout(5, 1, 0, 0));
+		jContentPane.setLayout(new GridLayout(6, 1, 0, 0));
 		jContentPane.add(jLabelSelectOption);
 		jContentPane.add(jButtonCreateQuery);
-		jContentPane.add(jButtonQueryQueries);
+		jContentPane.add(jButtonAnular);
+		jContentPane.add(jButtonConsultarSaldo);
 		jContentPane.add(jButtonSeeRides);
 
 		jContentPane.add(panel);

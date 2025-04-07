@@ -79,21 +79,34 @@ public class TarjetaGUI extends JFrame {
 		JButton btnNewButton = new JButton("Aceptar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				int s = Integer.parseInt(textField.getText());
-				if(BLF.doesCardExist(s)) {
-					if(BLF.doesCardHaveEnoughMoney(s, recarga)) {
-						p.setMonedero(p.getMonedero()+recarga);
-						JOptionPane.showMessageDialog(null, "Tarjeta aceptada", "Aceptar", JOptionPane.INFORMATION_MESSAGE);
-						dispose();
-					}else {
-						JOptionPane.showMessageDialog(null, "Error: Dinero insuficiente en la tarjeta", "Error", JOptionPane.ERROR_MESSAGE);
+				//ver si todos los campos están rellenados:
+				if(!textField.getText().trim().isEmpty()||!textField_1.getText().trim().isEmpty()||!textField_2.getText().trim().isEmpty()||!textField_3.getText().trim().isEmpty()) {
+					try {
+						int s = Integer.parseInt(textField.getText());
+						if(BLF.doesCardExist(s)) {
+							if(BLF.doesCardHaveEnoughMoney(s, recarga)) {
+								p.setMonedero(p.getMonedero()+recarga);
+								JOptionPane.showMessageDialog(null, "Tarjeta aceptada", "Aceptar", JOptionPane.INFORMATION_MESSAGE);
+								dispose();
+							}else {
+								JOptionPane.showMessageDialog(null, "Error: Dinero insuficiente en la tarjeta", "Error", JOptionPane.ERROR_MESSAGE);
+
+							}
+							
+						}else {
+							JOptionPane.showMessageDialog(null, "Error: La tarjeta introducida no existe", "Error", JOptionPane.ERROR_MESSAGE);
+							//dispose();
+						}
+					}catch(NumberFormatException e1){
+						JOptionPane.showMessageDialog(null, "Error: Rellene los datos correctamente por favor", "Error", JOptionPane.ERROR_MESSAGE);
 
 					}
 					
 				}else {
-					JOptionPane.showMessageDialog(null, "Error: La tarjeta introducida no existe", "Error", JOptionPane.ERROR_MESSAGE);
-					//dispose();
+					JOptionPane.showMessageDialog(null, "Error: Rellene todos los campos por favor", "Error", JOptionPane.ERROR_MESSAGE);
+
 				}
+				
 			}
 		});
 		btnNewButton.setBounds(107, 219, 85, 21);

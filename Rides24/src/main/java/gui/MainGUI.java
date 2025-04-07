@@ -9,6 +9,7 @@ import javax.swing.*;
 
 import domain.Driver;
 import businessLogic.BLFacade;
+import businessLogic.BLFacadeImplementation;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -46,6 +47,7 @@ public class MainGUI extends JFrame {
 	private JRadioButton rdbtnNewRadioButton_2;
 	private JPanel panel;
 	private final ButtonGroup buttonGroup = new ButtonGroup();
+	private JButton btnAceptar;
 	
 	/**
 	 * This is the default constructor
@@ -119,10 +121,22 @@ public class MainGUI extends JFrame {
 		});
 		
 		jContentPane = new JPanel();
-		jContentPane.setLayout(new GridLayout(4, 1, 0, 0));
+		jContentPane.setLayout(new GridLayout(5, 1, 0, 0));
 		jContentPane.add(jLabelSelectOption);
 		jContentPane.add(jButtonCreateQuery);
 		jContentPane.add(jButtonQueryQueries);
+		
+//		btnAceptar = new JButton(ResourceBundle.getBundle("Etiquetas").getString("MainGUI.btnNewButton.text")); //$NON-NLS-1$ //$NON-NLS-2$
+		btnAceptar = new JButton("Aceptar viajes"); //$NON-NLS-1$ //$NON-NLS-2$
+		btnAceptar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				ConfirmGUI cfmgui = new ConfirmGUI(driver);
+				cfmgui.setBussinessLogic(appFacadeInterface);
+				cfmgui.setVisible(true);
+			}
+		});
+		
+		jContentPane.add(btnAceptar);
 		jContentPane.add(panel);
 		
 		

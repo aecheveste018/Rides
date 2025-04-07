@@ -216,6 +216,7 @@ public class Ride implements Serializable {
 				booked[i]=p;
 				added=true;
 			}
+			i++;
 		}
 		return added;
 	}

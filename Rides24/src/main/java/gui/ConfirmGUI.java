@@ -34,13 +34,13 @@ public class ConfirmGUI extends JFrame {
 	private Driver driver;
 	private Ride selectedRide;
 	private Passenger currentPassenger;
-	private static BLFacadeImplementation BLF;
+	private static BLFacade BLF;
 	public static BLFacade getBusinessLogic(){
 		return BLF;
 	}
 	 
 	public static void setBussinessLogic (BLFacade afi){
-		BLF=(BLFacadeImplementation) afi;
+		BLF= afi;
 	}
 
 	/**
@@ -85,10 +85,7 @@ public class ConfirmGUI extends JFrame {
 		JComboBox comboBoxPassenger = new JComboBox();
 		comboBoxPassenger.setEnabled(false);
 		passengerModel.removeAllElements();
-		Passenger[] pList = selectedRide.getBooked();
-		for(Passenger p : pList) {
-			passengerModel.addElement(p);
-		}
+
 		comboBoxPassenger.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
 				if(e.getStateChange() == ItemEvent.SELECTED) {
@@ -109,16 +106,38 @@ public class ConfirmGUI extends JFrame {
 		
 		
 		JComboBox comboBoxRides = new JComboBox();
-		
-		comboBoxRides.addItemListener(new ItemListener() {
-			public void itemStateChanged(ItemEvent e) {
-				if(e.getStateChange()== ItemEvent.SELECTED) {
-					selectedRide = (Ride) comboBoxRides.getSelectedItem();
-					comboBoxPassenger.setEnabled(true);
+		comboBoxRides.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("Aquiiii");
+				selectedRide = (Ride) comboBoxRides.getSelectedItem();
+				comboBoxPassenger.setEnabled(true);
+				System.out.println("Aquiiii");
+				Passenger[] pList = selectedRide.getBooked();
+				comboBoxPassenger.removeAll();
+				passengerModel.removeAllElements();
+				for(Passenger p : pList) {
+					passengerModel.addElement(p);
 					
 				}
+				comboBoxPassenger.setModel(passengerModel);
 			}
 		});
+		
+//		comboBoxRides.addItemListener(new ItemListener() {
+//			public void itemStateChanged(ItemEvent e) {
+//				if(e.getStateChange()== ItemEvent.SELECTED) {
+//					selectedRide = (Ride) comboBoxRides.getSelectedItem();
+//					comboBoxPassenger.setEnabled(true);
+//					System.out.println("Aquiiii");
+//					Passenger[] pList = selectedRide.getBooked();
+//					
+//					for(Passenger p : pList) {
+//						passengerModel.addElement(p);
+//					}
+//					
+//				}
+//			}
+//		});
 		
 		ridesModel.removeAllElements();
 		Collection<Ride> rList = d.getRides();

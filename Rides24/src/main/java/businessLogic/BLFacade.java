@@ -171,6 +171,8 @@ public interface BLFacade  {
 	boolean doesCardExist(int nTarjerta);
 
 	boolean doesCardHaveEnoughMoney(int nTarjeta, double cantidad);
+	public void anularReserva(Passenger p, Ride ride);
+	  public void aproveRide(Ride ride, Passenger p);
 
 //>>>>>>> branch 'master' of https://github.com/aecheveste018/Rides
 

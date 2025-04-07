@@ -687,8 +687,9 @@ public class DataAccess {
 						rideFromDB.setBetMinimum(rideFromDB.getnPlaces() - 1); // Actualizar el número de plazas disponibles en el viaje
 						passenger.addReserva(rideFromDB); 
 							
-						//db.merge(passenger);
+						db.merge(passenger);
 						db.merge(rideFromDB);
+						
 						db.getTransaction().commit();
 						return true; // Reserva exitosa
 					} else {
@@ -762,14 +763,14 @@ public class DataAccess {
 	        em.close();
 	    }
 	}
-	public void deleteBooked() {
-		db.getTransaction().begin();
-		//TODO
-		
-		
-		
-		db.getTransaction().commit();
-	}
+//	public void deleteBooked() {
+//		db.getTransaction().begin();
+//		//TODO
+//		
+//		
+//		
+//		db.getTransaction().commit();
+//	}
 	public void insertRide(Ride ride) {
 		db.getTransaction().begin();
 		db.persist(ride);

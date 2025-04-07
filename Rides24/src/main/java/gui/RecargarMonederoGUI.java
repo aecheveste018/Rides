@@ -10,6 +10,7 @@ import javax.swing.border.EmptyBorder;
 import domain.Passenger;
 
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -44,8 +45,8 @@ public class RecargarMonederoGUI extends JFrame {
 	 * Create the frame.
 	 */
 	public RecargarMonederoGUI(Passenger p) {
+		this.setSize(495, 290);
 		passenger = p;
-		
 		setTitle("RecargarMonedero");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
@@ -55,7 +56,7 @@ public class RecargarMonederoGUI extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Indique la cantidad de dinero que desee recargar");
-		lblNewLabel.setBounds(10, 11, 261, 35);
+		lblNewLabel.setBounds(10, 11, 335, 35);
 		contentPane.add(lblNewLabel);
 		
 		monedero = new JTextField();
@@ -66,12 +67,16 @@ public class RecargarMonederoGUI extends JFrame {
 		monedero.setColumns(10);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				int recarga= Integer.parseInt(monedero.getText());
-				if(recarga>0){
-					TarjetaGUI t=new TarjetaGUI(recarga,p);
-					t.setVisible(true);
-					//passenger.setMonedero((double)aux);
-					dispose();
+				try {
+					int recarga= Integer.parseInt(monedero.getText());
+					if(recarga>0){
+						TarjetaGUI t=new TarjetaGUI(recarga,p);
+						t.setVisible(true);
+						//passenger.setMonedero((double)aux);
+						dispose();
+					}
+				}catch(NumberFormatException e1) {
+					JOptionPane.showMessageDialog(null, "Error: Solo se admiten números ", "Error", JOptionPane.ERROR_MESSAGE);
 				}
 			}
 		});
