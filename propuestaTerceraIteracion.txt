@@ -1,4 +1,5 @@
 Iteración 3:
 darse de alta y de baja en cuenta premium
 Mirar que descuento le corresponde como premium(según el número de viajes hechos)
-Viajes compuesto, en caso de no haber un viaje directo a algún sitio, se busca la alternativa más corta.
+Viajes compuesto.
+mandar correo al cliente cuando el conductor le acepta para su viaje
